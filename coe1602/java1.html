@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html> 
+<head>  
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        async function bclick(v,id) {
+            if(v == "on"){
+                document.getElementById(id).src = "pic_bulbon.gif"   
+            } else {
+                document.getElementById(id).src = "pic_bulboff.gif" 
+            }
+        }  async function bclick(v,id) {
+            if(v == "off"){
+                document.getElementById(id).src = "pic_bulbon.gif"   
+            } else {
+                document.getElementById(id).src = "pic_bulboff.gif" 
+            }
+        }         
+    </script>                                                                                                                                                                             
+</head> 
+<body>
+    <button onclick="bclick('off' , 'b1')">on</button>
+    <img id="b1" src="pic_bulboff.gif" style="width:100px" >
+    <button onclick="bclick('on' , 'b1')">off</button>
+        <br><br><br><br><br><br><br><br>
+    <button onclick="bclick('off' , 'b2')">on</button>
+    <img id="b2" src="pic_bulboff.gif" style="width:100px" >
+    <button onclick="bclick('on' , 'b2')">off</button>
+</body>
+</html>
